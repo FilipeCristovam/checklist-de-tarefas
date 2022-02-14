@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>todo-list</title>
+  </head>
+  <body>
+    <ul id="menuH">
+      <li><a href="">Home</a></li>
+      <li><a href="">Tarefas</a></li>
+      <li><a href="">agenda</a></li>
+    </ul>
+
+    <div class="container">
+      <div class="coluRight">
+        <img class="imgP" src="assets/slid-note.svg" alt="" />
+      </div>
+
+      <div class="todo">
+        <div class="todo__title">SUAS TAREFAS</div>
+
+        <div class="todo__list" id="todoList"></div>
+
+        <div class="todo__new-item">
+          <div>&and;</div>
+          <input
+            type="text"
+            id="newItem"
+            placeholder="Digite e pressione enter para adicionar a tarefa"
+          />
+          <div>&and;</div>
+        </div>
+        <div class="buttons">
+          <button class="btO" id="ocuList" onclick="barExi()">
+            OCULTAR LISTA
+          </button>
+
+          <button class="btV" id="verList" onclick="barExi()">VER LISTA</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
